@@ -1,43 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/dnguyen/Documents/etude/BCV-token/contracts/BCVToken.sol": {
-      "lastModificationDate": 1656406549309,
-      "contentHash": "0722364e104f0b9325a021b4c3f3b930",
-      "sourceName": "contracts/BCVToken.sol",
-      "solcConfig": {
-        "version": "0.8.0",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "BCVToken"
-      ]
-    },
     "/home/dnguyen/Documents/etude/BCV-token/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
       "lastModificationDate": 1656337051395,
       "contentHash": "a9d2146925da52142435d3bb8df53c3c",
@@ -182,6 +145,43 @@
       ],
       "artifacts": [
         "Context"
+      ]
+    },
+    "/home/dnguyen/Documents/etude/BCV-token/contracts/token/BCVToken.sol": {
+      "lastModificationDate": 1656417798880,
+      "contentHash": "0722364e104f0b9325a021b4c3f3b930",
+      "sourceName": "contracts/token/BCVToken.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BCVToken"
       ]
     }
   }

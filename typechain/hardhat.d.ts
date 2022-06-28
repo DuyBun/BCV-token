@@ -28,6 +28,10 @@ declare module "hardhat/types/runtime" {
       name: "BCVToken",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.BCVToken__factory>;
+    getContractFactory(
+      name: "BCVToken",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.BCVToken__factory>;
 
     getContractAt(
       name: "ERC20",
@@ -44,6 +48,11 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IERC20>;
+    getContractAt(
+      name: "BCVToken",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.BCVToken>;
     getContractAt(
       name: "BCVToken",
       address: string,
