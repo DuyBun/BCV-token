@@ -1,0 +1,25 @@
+import { ethers } from "hardhat";
+
+const { expect } = require("chai");
+
+describe("Token contract", function () {
+  it("Deployment should assign the total supply of tokens to the owner", async function () {
+    const [owner, addr1, addr2] = await ethers.getSigners();
+
+    const Token = await ethers.getContractFactory("BCVToken");
+
+    const hardhatToken = await Token.deploy();
+    // Transfer 50 tokens from owner to addr1
+    await hardhatToken.transfer(addr1.address, 50);
+    expect(await hardhatToken.balanceOf(addr1.address)).to.equals(50);
+
+    // Transfer 50 tokens from addr1 to addr2
+    await hardhatToken.connect(addr1).transfer(addr2.address, 50);
+    expect(await hardhatToken.balanceOf(addr2.address)).to.equals(50);
+
+    // Transfer 50 tokens from addr2 to owner
+    await hardhatToken.connect(addr2).transfer(owner.address, 50);
+    const ownerBalance = await hardhatToken.balanceOf(owner.address);
+    expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
+  });
+});
