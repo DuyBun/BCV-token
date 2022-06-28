@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/dnguyen/Documents/etude/BCV-token/contracts/BCVToken.sol": {
-      "lastModificationDate": 1656340484881,
-      "contentHash": "960187d5d6d626eb37ba9b9b86a02f75",
+      "lastModificationDate": 1656406549309,
+      "contentHash": "0722364e104f0b9325a021b4c3f3b930",
       "sourceName": "contracts/BCVToken.sol",
       "solcConfig": {
         "version": "0.8.0",
